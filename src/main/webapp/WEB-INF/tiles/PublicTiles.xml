@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">  
+<tiles-definitions>  
+    <definition name="public.cland" template="/WEB-INF/views/templates/public.jsp">  
+        <put-attribute name="header" value="/WEB-INF/views/components/public/header.jsp" />  
+        <put-attribute name="sidebar" value="/WEB-INF/views/components/public/sidebar.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/views/components/public/footer.jsp" />  
+    </definition>  
+    
+    <definition name="index.public" extends="public.cland">  
+        <put-attribute name="body" value="/WEB-INF/views/views/public/index.jsp" />  
+    </definition>  
+  
+    <definition name="cat.public" extends="public.cland">  
+        <put-attribute name="body" value="/WEB-INF/views/views/public/cat.jsp" />  
+    </definition>  
+    
+    <definition name="detail.public" extends="public.cland">  
+        <put-attribute name="body" value="/WEB-INF/views/views/public/detail.jsp" />  
+    </definition>  
+    
+    <definition name="contact.public" extends="public.cland">  
+        <put-attribute name="body" value="/WEB-INF/views/views/public/contact.jsp" />  
+    </definition>  
+    
+     <definition name="search.public" extends="public.cland">  
+        <put-attribute name="body" value="/WEB-INF/views/views/public/search.jsp" />  
+    </definition> 
+  
+</tiles-definitions>  
